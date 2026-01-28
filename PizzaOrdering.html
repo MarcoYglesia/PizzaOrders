@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pizza Ordering Form</h1>
+    </header>
+
+    <main>
+        <h2>Contact Information</h2>
+            <p>
+                <label for="InName">Name: </label>
+                <input type="text" name="InName" id="InName" required>
+                <br>
+                <label for="InPhone">Phone: </label>
+                <input type="text" name="InPhone" id="InPhone" required>
+                <br>
+                <label for="InEmail">Email: </label>
+                <input type="email" name="InEmail" id="InEmail" required>
+            </p>
+        <h2>Select Pizza Size</h2>
+            <p>
+                <label>Pizza Size:
+                    <select name="Size" id="Size">
+                        <option>-- Select Size --</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                        <option>X-Large</option>
+                    </select>
+                </label>
+            </p>
+        <h2>Select Sauce</h2>
+            <p>
+                <label>
+                    <input type="radio" name="Sauce" value="Marinara" required>
+                    Marinara
+                </label><br>
+                <label>
+                    <input type="radio" name="Sauce" value="Ranch" required>
+                    Ranch
+                </label><br>
+                <label>
+                    <input type="radio" name="Sauce" value="No Sauce" required>
+                    No Sauce
+                </label><br>
+            </p>
+        <h2>Select Toppings</h2>
+            <p>
+                <input type="checkbox" id="Pepperoni" name="Pepperoni" value="Pepperoni">
+                <label for="Pepperoni">Pepperoni</label>
+                <input type="checkbox" id="Sausage" name="Sausage" value="Sausage">
+                <label for="Sausage">Sausage</label>
+                <br>
+                <input type="checkbox" id="Mushroom" name="Mushroom" value="Mushroom">
+                <label for="Mushroom">Mushroom</label>
+                <input type="checkbox" id="Pineapple" name="Pineapple" value="Pineapple">
+                <label for="Pineapple">Pineapple</label>
+                <br>
+                <input type="checkbox" id="Peppers" name="Peppers" value="Peppers">
+                <label for="Peppers">Peppers</label>
+                <input type="checkbox" id="Onions" name="Onions" value="Onions">
+                <label for="Onions">Onions</label>
+            </p>
+        <h2>Additional Instructions</h2>
+            <p>
+                <label>
+                    <textarea name="Instructions">Add Instructions</textarea>
+                </label>
+                <br>
+                <input type="submit" value="Submit!">
+            </p>
+
+        <br>
+        <section>
+            <h4>List of My Favorite Games</h4>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th scope="col"><b>Developer</b></th>
+                            <th scope="col"><b>Title</b></th>
+                            <th scope="col"><b>Year</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="3" scope="rowgroup">Square Enix</th>
+                            <td>Sword of Mana</td>
+                            <td>2003</td>
+                        </tr>
+                        <tr>
+                            <td>Final Fantasy 7</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Nier:Automata</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Konami</th>
+                            <td>Silent Hill 2</td>
+                            <td>2001</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Count: 4</td>
+                        </tr>
+                    </tfoot>
+                </table>
+        </section>
+    </main>
+</body>
+</html>
